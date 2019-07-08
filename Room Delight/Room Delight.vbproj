@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57A90DF6-F332-45A6-9BC6-2A451B6CEBA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Room_Delight.My.MyApplication</StartupObject>
+    <RootNamespace>Room_Delight</RootNamespace>
+    <AssemblyName>Room Delight</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Room Delight.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Room Delight.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Room Delight, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.Designer.vb">
+      <DependentUpon>Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelightButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DelightDataGridCellStyle.vb" />
+    <Compile Include="DelightDialogBox.Designer.vb">
+      <DependentUpon>DelightDialogBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelightDialogBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelightDialogYesNoBox.Designer.vb">
+      <DependentUpon>DelightDialogYesNoBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DelightDialogYesNoBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelightRoomControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputForm_Reservation.Designer.vb">
+      <DependentUpon>InputForm_Reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputForm_Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputForm_Room.Designer.vb">
+      <DependentUpon>InputForm_Room.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputForm_Room.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputForm_UserAccounts.Designer.vb">
+      <DependentUpon>InputForm_UserAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputForm_UserAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListofUsers.Designer.vb">
+      <DependentUpon>ListofUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListofUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgStyles.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyAccount.Designer.vb">
+      <DependentUpon>MyAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New or Renew Password.Designer.vb">
+      <DependentUpon>New or Renew Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New or Renew Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments.Designer.vb">
+      <DependentUpon>Payments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.vb">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.vb">
+      <DependentUpon>ReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room Browser.Designer.vb">
+      <DependentUpon>Room Browser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room Browser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomDelightUtility.vb" />
+    <Compile Include="SearchQuery.Designer.vb">
+      <DependentUpon>SearchQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shell.Designer.vb">
+      <DependentUpon>Shell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogs.Designer.vb">
+      <DependentUpon>UserLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data.resx">
+      <DependentUpon>Data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelightDialogBox.resx">
+      <DependentUpon>DelightDialogBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelightDialogYesNoBox.resx">
+      <DependentUpon>DelightDialogYesNoBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelightRoomControl.resx">
+      <DependentUpon>DelightRoomControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputForm_Reservation.resx">
+      <DependentUpon>InputForm_Reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputForm_Room.resx">
+      <DependentUpon>InputForm_Room.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputForm_UserAccounts.resx">
+      <DependentUpon>InputForm_UserAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListofUsers.resx">
+      <DependentUpon>ListofUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount.resx">
+      <DependentUpon>MyAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New or Renew Password.resx">
+      <DependentUpon>New or Renew Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments.resx">
+      <DependentUpon>Payments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room Browser.resx">
+      <DependentUpon>Room Browser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchQuery.resx">
+      <DependentUpon>SearchQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shell.resx">
+      <DependentUpon>Shell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogs.resx">
+      <DependentUpon>UserLogs.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mouse Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconDelight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CriticalMsgStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarningMsgStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoMsgStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomTypeBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Couple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Single.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2x2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButtonDelight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewButtonDelight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
