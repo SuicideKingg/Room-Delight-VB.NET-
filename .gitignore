@@ -49,4 +49,5 @@ Thumbs.db
 *.wmv
 
 /.vs
-/Room Delight/obj
+/Room Delight/bin/Debug
+/Room Delight/obj/x86/Debug
